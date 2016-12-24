@@ -1,7 +1,7 @@
 # cbcgn-announcements
 A quick way to show posts from a Google Group on a webpage using feedparser and Django.
 
-*This requires Django and is therefore not available on my GitHub page.*
+*This requires Django and is therefore not available on my actual page.*
 
 ![Demo](https://github.com/tyj144/cbcgn-announcements/blob/master/demo.png)
 
