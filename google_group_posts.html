@@ -1,0 +1,31 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+	{% for post in posts %}
+		<li class="list-group-item">
+		<div class="row">
+		<div class="col-md-10">
+			<h3 style="font-size:17pt">{{ post.title }}</h3>
+			<p>by {{ post.author_detail.name }}</p>
+		</div>
+		<div class="col-md-2">
+			<p class="text-right">
+			{% for date_item in post.published %}
+				{{date_item}}<br>
+			{% endfor %}
+			</p>
+		</div>
+		</div>
+			<p>
+				{{ post.summary }}
+				{% if post.summary|length > 280 %}
+				...
+				{% endif %}
+			</p>
+			<a class="btn btn-primary" href="{{ post.link }}"><i class="fa fa-book" aria-hidden="true"></i> Read More</a>
+		
+			<br><br>
+		</li>
+	{% endfor %}
+	</ul>
+{% endblock %}	
