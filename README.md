@@ -1,4 +1,4 @@
-# Google Groups in Django
+# Google Groups for Django
 A quick way to show posts from a Google Group on a webpage using feedparser and Django.
 
 *This requires Django and is therefore not available on my actual page.*
